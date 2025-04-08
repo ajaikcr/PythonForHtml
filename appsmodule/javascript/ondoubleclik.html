@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>HTML DOM Events</h1>
+<h2>The ondblclick Event</h2>
+<p ondblclick="myFunction(event)" id="demo">hi</p>
+<p id="demo1">demo</p>
+<script>
+function myFunction(e) {
+//alert(e.target.textContent);
+  document.getElementById("demo1").innerHTML = e.target.textContent;
+}
+</script>
+</body>
+</html>

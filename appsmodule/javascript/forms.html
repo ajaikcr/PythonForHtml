@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<body>
+ 
+<h1>The Document Object</h1>
+<h2>The forms Property</h2>
+ 
+<p><form id="myCarForm">
+Favorite Car: <input type="text" name="fname" value="Volvo">
+</form></p>
+ 
+<p><form id="myColorForm">
+Favorite Color: <input type="text" name="favcolor" value="Blue">
+</form></p>
+ 
+<p>The id of the first form element is:</p>
+<p id="demo"></p>
+ 
+<script>
+let fm= document.forms['myCarForm'];
+//alert(fm);
+//alert(fm.elements)
+//alert(fm.elements[0]);
+(function foo() {    
+     //alert('Hello World! Named Self Invoking Function Here');
+})();
+x=12;
+y=45;
+ add=(function(){
+	s=4+5
+  return s;
+   }
+);
+  
+  alert(add());
+  var add = (function () {
+    var counter = 0;
+    //return function () {counter += 1;alert(counter); return counter}
+})();
+
+add();
+add();
+</script>
+ 
+</body>
+</html>

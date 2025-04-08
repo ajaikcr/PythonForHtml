@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+ <html>
+<body>
+ <h1>The Document Object</h1>
+<h2>The getElementsByTagName() Method</h2>
+ <p id=”demo”>This is a p element</p>
+<p>This is also a p element.</p>
+<p>This is also a p element.</p>
+<p>Change the background color of all p elements in this document:</p>
+ <script>
+ const collection = document.getElementsByTagName("p");
+alert(collection);
+console.log(collection);
+document.write(collection);
+for (let i = 0; i < collection.length; i++) {
+  collection[i].style.color = "red";
+ collection[i].style.fontSize = "20px";
+}
+ </script>
+</body>
+</html>

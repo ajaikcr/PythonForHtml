@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <style>
+     .cls{
+        color:#3700ff;
+        border: 2px solid #80003c;
+     }
+    </style>
+<body>
+<h2>Change HTML Attribute Values</h2>
+<p>Change HTML Attribute Values using setAttribute(), removeAttribute(), hasAttribute() and getAttribute()</p>
+<p id="demo">here</p>
+<script>
+    x=document.getElementById("demo");
+    alert(x.hasAttribute("id"));
+    x.setAttribute('class','cls');
+    console.log(x)
+    x.removeAttribute('id');
+    alert(x.getAttribute('id'));
+    alert(x.getAttribute('class'));
+ </script>
+</body>
+</html>

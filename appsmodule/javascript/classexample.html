@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <body>
+    <p> this is a 1st paragraph</p>
+    <p class =" value">this is 2 line of para</p>
+    <p id=" gg">this is 3 line of para</p>
+    <h1 class ="value">this is 1st header</h1>
+    <h2 class=" value"> this is 2 header </h2>
+    <h3 class =" value">this is 3 headrer</h3>
+    <script>
+        const collection= document.getElementsByClassName("value")
+        collection[0].innerHTML="milk"
+        collection[1].innerHTML="vanila"
+        for (let i=0;i<collection.length;i++){
+            collection[i].style.color="red";
+        }
+    </script>
+    </body>
+</html>
